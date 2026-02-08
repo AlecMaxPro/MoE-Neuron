@@ -2,7 +2,7 @@
 
 Code for the paper **"Deconstructing Pre-training: Knowledge Attribution Analysis in MoE and Dense Models"** (arXiv:2601.08383, accepted by AAAI 2026).
 
-This repository extends neuron-level attribution analysis from dense models to **Mixture-of-Experts (MoE)** models, and compares knowledge acquisition dynamics between MoE and dense architectures.
+This repository extends neuron attribution analysis from dense models to **Mixture-of-Experts (MoE)** models, and compares knowledge acquisition dynamics between MoE and dense architectures.
 
 Paper: https://arxiv.org/abs/2601.08383
 
