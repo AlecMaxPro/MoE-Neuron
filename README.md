@@ -2,25 +2,10 @@
 
 Code for the paper **"Deconstructing Pre-training: Knowledge Attribution Analysis in MoE and Dense Models"** (arXiv:2601.08383, accepted by AAAI 2026).
 
-This repository adapts and extends neuron-level attribution analysis from dense models to **Mixture-of-Experts (MoE)** models, and compares knowledge acquisition dynamics between MoE and dense architectures.
+This repository extends neuron-level attribution analysis from dense models to **Mixture-of-Experts (MoE)** models, and compares knowledge acquisition dynamics between MoE and dense architectures.
 
 Paper: https://arxiv.org/abs/2601.08383
 
-## Repository Structure
-
-```text
-MoE-Neuron/
-├── OLMo_view_knowledge.ipynb
-├── OLMoE_view_knowledge.ipynb
-├── modeling_olmo.py
-├── modeling_olmoe.py
-├── environment.yml
-└── data/
-    ├── commonsense/
-    ├── factual/
-    ├── linguistic/
-    └── bias/
-```
 
 ## Environment Setup
 
@@ -31,7 +16,7 @@ conda activate attribution
 
 ## Running Code
 
-Before running notebooks, replace the corresponding `transformers` modeling files in your environment with the modified files in this repository.
+Before running notebooks, replace the `transformers` modeling files in your environment with the modified files in this repository.
 
 1. Locate your Python environment path, e.g.:
 - `.../envs/<YOUR_ENV>/lib/python3.8/site-packages/transformers/models/olmo/modeling_olmo.py`
@@ -41,7 +26,7 @@ Before running notebooks, replace the corresponding `transformers` modeling file
 - `modeling_olmo.py`
 - `modeling_olmoe.py`
 
-3. Open and run:
+3. Run:
 - `OLMo_view_knowledge.ipynb` (Dense OLMo)
 - `OLMoE_view_knowledge.ipynb` (MoE OLMoE)
 
@@ -49,10 +34,6 @@ Before running notebooks, replace the corresponding `transformers` modeling file
 - `modelname = "your own model dir"`
 - output directory variables (currently placeholder `Output_Dir`) to your target path.
 
-## Notes
-
-- The modified modeling files are used to extract internal vectors/signals during inference.
-- Please keep a backup of original `transformers` files so you can restore your environment later.
 
 ## Citation
 
