@@ -19,20 +19,20 @@ conda activate attribution
 Before running notebooks, replace the `transformers` modeling files in your environment with the modified files in this repository.
 
 1. Locate your Python environment path, e.g.:
-- `.../envs/<YOUR_ENV>/lib/python3.8/site-packages/transformers/models/olmo/modeling_olmo.py`
-- `.../envs/<YOUR_ENV>/lib/python3.8/site-packages/transformers/models/olmoe/modeling_olmoe.py`
+`.../envs/<YOUR_ENV>/lib/python3.8/site-packages/transformers/models/olmo/modeling_olmo.py`
+`.../envs/<YOUR_ENV>/lib/python3.8/site-packages/transformers/models/olmoe/modeling_olmoe.py`
 
 2. Backup original files and replace them with:
-- `modeling_olmo.py`
-- `modeling_olmoe.py`
+`modeling_olmo.py`
+`modeling_olmoe.py`
 
 3. Run:
-- `OLMo_view_knowledge.ipynb` (Dense OLMo)
-- `OLMoE_view_knowledge.ipynb` (MoE OLMoE)
+`OLMo_view_knowledge.ipynb` (Dense OLMo)
+`OLMoE_view_knowledge.ipynb` (MoE OLMoE)
 
 4. In notebooks, set:
-- `modelname = "your own model dir"`
-- output directory variables (currently placeholder `Output_Dir`) to your target path.
+`modelname = "your own model dir"`
+output directory variables (currently placeholder `Output_Dir`) to your target path.
 
 
 ## Citation
